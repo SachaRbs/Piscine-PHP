@@ -1,29 +1,45 @@
 body {
 	background-color: #505050;
 }
+
+* {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 25px;
+	margin: 0;
+}
+
 .box_top {
 	background-color: #909090;
 	border-radius: 10px;
 	padding-top: 10px;
 	padding-left: 40px;
 	margin-left: 10px;
+	margin-top: 20px;
 	margin-right: 10px;
 	box-shadow: 8px 8px 7px black;
 }
 
 .box {
-	margin: 5%;
-	margin-top: 10px;
+	margin: 35px;
+	margin-left: 3%;
+	top: 5px;
 }
 
 .side {
 	background-color: #909090;
 	box-shadow: 8px 8px 7px black;
 	border-radius: 10px;
-	padding: 10px;
+	padding: 20px;
 	width: fit-content;
 	float: left;
 	text-align: center;
+}
+
+.bg {
+	background: url('resources/brick.jpg');
+	width: 120px;
+	height: 70px;
+	border: 0;
 }
 
 .center {
@@ -41,28 +57,58 @@ body {
 }
 
 .left {
+	top: 5px;
+	padding-left: 32px;
+	padding-right: 32px;
 }
 
 .loupe {
 	float: right;
-	padding-top: 35px;
+	padding-top: 10px;
 	padding-right: 30px;
 }
 
 .search {
 	background-color: #89FF88;
-	padding: 50px;
+	box-shadow: 8px 8px 7px black;
+	padding: 10px;
 	position: relative;
 	border-radius: 10px;
-	width: 300px;
-	height: 50px;
-	margin-top: 500px;
-	margin-left: 5%;
+	width: 580px;
+	height: 180px;
+	top: 650px;
+	left: -3%;
 }
 
 .milieu {
 	background-color: #505050;
-	margin-left: 10%;
-	margin-right: 10%;
+	margin-left: 15%;
+	margin-right: 15%;
 	height: 100%;
+}
+
+.border {
+	border-width: 10px;
+	border: solid red;
+}
+
+.text {
+	position: absolute;
+	text-align: left;
+	vertical-align: text-top;
+}
+
+.input {
+	width : 450px;
+	height : 20px;
+}
+
+form {
+	position: absolute;
+	top: 110px;
+}
+
+.elem {
+	float :right;
+	padding-right:10px;
 }

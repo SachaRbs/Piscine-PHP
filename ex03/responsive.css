@@ -1,0 +1,77 @@
+body {
+	background-image: url()
+}
+
+table {
+	width:100%;
+}
+
+h1 {
+	font-size: 2.2vw;
+	text-align: right;
+}
+
+p {
+	font-family: 'Courier New', Courier, monospace;
+	font-size:0.4vw
+}
+
+.titre {
+	text-align: center;
+}
+
+.responsive {
+	max-width: 5%;
+	height: auto;
+  }
+
+td {
+	border: 1px solid black;
+	width:5.55555%;
+}
+ .empty {
+	border: 0px;	
+ }
+.num {
+	text-align: left;
+}
+.mass {
+	text-align:right;
+}
+p {
+	font-size: 0.9vw;
+	text-align: center;
+}
+h1 {
+	text-align: center
+}
+td.non_metaux {
+	background-color:#cccccc;
+}
+td.metaux_alcalins {
+	background-color: #ffcc99;
+}
+td.metaux_alc_terr {
+	background-color:  #ffff99;
+}
+td.transition {
+	background-color: #e699ff;
+}
+td.pauvres {
+	background-color: #99ff99;
+}
+td.metalloides {
+	background-color: #ccff99;
+}
+td.halogenes {
+	background-color: #99ffff;
+}
+td.nobles {
+	background-color: #9999ff ;
+}
+td.lanthanede {
+	background-color: #ff9999;
+}
+td.actimide {
+	background-color: #ff99ff;
+}
