@@ -112,3 +112,38 @@ form {
 	float :right;
 	padding-right:10px;
 }
+
+.apple {
+	padding:100px;
+	position:absolute;
+	z-index: 1000;
+	width:50px;
+	align-content: left;
+	left: 64%;
+	top: 48%;
+	opacity:0;
+}
+
+.ikea {
+	padding:50px;
+	height: 70px;
+	position:absolute;
+	z-index: 1000;
+	width:50px;
+	align-content: left;
+	left: 40%;
+	top: 48%;
+	opacity:0;
+}
+
+.disney {
+	padding:50px;
+	height: 70px;
+	position:absolute;
+	z-index: 1000;
+	width:50px;
+	align-content: left;
+	left: 40%;
+	top: 48%;
+	/* opacity:0; */
+}

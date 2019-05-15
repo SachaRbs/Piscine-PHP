@@ -1,0 +1,208 @@
+body {
+	background-color: #505050;
+}
+
+* {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 25px;
+	margin: 0;
+}
+
+.box_top {
+	background-color: #909090;
+	border-radius: 10px;
+	padding-top: 10px;
+	padding-left: 40px;
+	margin-left: 10px;
+	margin-top: 20px;
+	margin-right: 10px;
+	box-shadow: 8px 8px 7px black;
+}
+
+.box {
+	margin: 35px;
+	margin-left: 3%;
+	top: 5px;
+}
+
+.side {
+	background-color: #909090;
+	box-shadow: 8px 8px 7px black;
+	border-radius: 10px;
+	padding: 20px;
+	width: fit-content;
+	float: left;
+	text-align: center;
+}
+
+.bg {
+	background: url('resources/brick.jpg');
+	width: 120px;
+	height: 70px;
+	border: 0;
+}
+
+.center {
+	background-color: #909090;
+	box-shadow: 8px 8px 7px black;
+	border-radius: 10px;
+	padding: 10px;
+	float: left;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.right {
+	padding-bottom: 20px;
+}
+
+.left {
+	top: 5px;
+	padding-left: 32px;
+	padding-right: 32px;
+}
+
+.loupe {
+	float: right;
+	padding-top: 10px;
+	padding-right: 30px;
+}
+
+.search {
+	background-color: #89FF88;
+	box-shadow: 8px 8px 7px black;
+	padding: 10px;
+	position: relative;
+	border-radius: 10px;
+	width: 580px;
+	height: 180px;
+	top: 650px;
+	left: -3%;
+}
+
+.milieu {
+	background-color: #505050;
+	margin-left: 15%;
+	margin-right: 15%;
+	height: 100%;
+}
+
+.border {
+	border-width: 10px;
+	border: solid red;
+}
+
+.text {
+	color: black;
+	position: absolute;
+	text-align: left;
+	vertical-align: text-top;
+}
+
+.input {
+	width : 450px;
+	height : 20px;
+}
+
+form {
+	position: absolute;
+	top: 110px;
+}
+
+.elem {
+	float :right;
+	padding-right:10px;
+}
+
+.holy {
+	padding:100px;
+	position:absolute;
+	z-index: 1000;
+	width:50px;
+	align-content: left;
+	left: 64%;
+	top: 48%;
+	opacity:0;
+}
+
+
+.enonce {
+	
+	background-color: red;
+	box-shadow: 8px 8px 7px black;
+	padding: 10px;
+	position: relative;
+	border-radius: 10px;
+	width: 580px;
+	height: 180px;
+	top: -7px;
+	left: 207%;
+	/* opacity: 0; */
+}
+
+.success {
+	background-color: #00FC67;
+	box-shadow: 8px 8px 7px black;
+	border-radius: 10px;
+	width:500px;
+	padding:100px;
+	height: 50px;
+	position:absolute;
+	z-index: 1000;
+	align-content: left;
+	left: 35%;
+	top: 35%;
+	text-align: center;
+}
+
+.f_violet {
+	background-color: black;
+	padding:9px;
+	position:absolute;
+	z-index: 1001;
+	left: 63.5%;
+	top: 41%;
+}
+
+.porte_sortie {
+	background-color: black;
+	padding:9px;
+	position:absolute;
+	z-index: 1001;
+	left: 63.5%;
+	top: 41%;
+	/* opacity:0; */
+}
+
+.charlie1 {
+	position: absolute;
+	top: 533px;
+	left: 1107px;
+}
+.charlie2 {
+	position: absolute;
+	top: 577px;
+	left: 1846px;
+}
+.charlie3 {
+	position: absolute;
+	top: 889px;
+	left: 921px;
+}
+.charlie4 {
+	position: absolute;
+	top: 213px;
+	left: 1068px;
+}
+.charlie5 {
+	position: absolute;
+	top: 533px;
+	left: 609px;
+}
+
+.success_text {
+	color: black;
+	position: absolute;
+	text-align: center;
+	/* vertical-align: text-top;	 */
+}
