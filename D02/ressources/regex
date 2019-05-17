@@ -1,0 +1,41 @@
+Regex quick reference
+[abc]     A single character: a, b or c
+[^abc]     Any single character but a, b, or c
+[a-z]     Any single character in the range a-z
+[a-zA-Z]     Any single character in the range a-z or A-Z
+^     Start of line
+$     End of line
+\A     Start of string
+\z     End of string
+.     Any single character
+\s     Any whitespace character
+\S     Any non-whitespace character
+\d     Any digit
+\D     Any non-digit
+\w     Any word character (letter, number, underscore)
+\W     Any non-word character
+\b     Any word boundary character
+(...)     Capture everything enclosed
+(a|b)     a or b
+a?     Zero or one of a
+a*     Zero or more of a
+a+     One or more of a
+a{3}     Exactly 3 of a
+a{3,}     3 or more of a
+a{3,6}     Between 3 and 6 of a
+
+	$regex  = '/(<a\s*'; // Start of anchor tag
+    $regex .= '(.*?)\s*'; // Any attributes or spaces that may or may not exist
+    $regex .= 'href=[\'"]+?\s*(?P<link>\S+)\s*[\'"]+?'; // Grab the link
+    $regex .= '\s*(.*?)\s*>\s*'; // Any attributes or spaces that may or may not exist before closing tag 
+    $regex .= '(?P<name>\S+)'; // Grab the name
+    $regex .= '\s*<\/a>)/i'; // Any number of spaces between the closing anchor tag (case insensitive)
+
+i (PCRE_CASELESS)
+	Effectue une recherche insensible à la casse.
+m (PCRE_MULTILINE)
+	Par défaut, PCRE traite la chaîne sujet comme une seule ligne (même si cette chaîne contient des retours chariot). Le métacaractère "début de ligne" (^) ne sera valable qu'une seule fois, au début de la ligne, et le métacaractère "fin de ligne " ($) ne sera valable qu'à la fin de la chaîne, ou avant le retour chariot final (à moins que l'option D ne soit activée). C'est le même fonctionnement qu'en Perl. Lorsque cette option est activée, " début de ligne " et " fin de ligne " correspondront alors aux caractères suivant et précédent immédiatement un caractère de nouvelle ligne, en plus du début et de la fin de la chaîne. C'est le même fonctionnement que l'option Perl /m. S'il n'y a pas de caractère de nouvelle ligne "\n" dans la chaîne sujet, ou s'il n'y a aucune occurrence de ^ ou $ dans le masque, cette option ne sert à rien.
+s (PCRE_DOTALL)
+	Avec cette option, le métacaractère point (.) remplace n'importe quel caractère, y compris les nouvelles lignes. Sans cette option, le caractère point ne remplace pas les nouvelles lignes. Cette option est équivalente à l'option Perl /s. Une classe de caractères négative telle que [^a] acceptera toujours les caractères de nouvelles lignes, indépendamment de cette option.
+x (PCRE_EXTENDED)
+	Avec cette option, les caractères d'espacement sont ignorés, sauf lorsqu'ils sont échappés, ou à l'intérieur d'une classe de caractères, et tous les caractères entre # non échappés et en dehors d'une classe de caractères, et le prochain caractère de nouvelle ligne sont ignorés. C'est l'équivalent Perl de l'option /x : elle permet l'ajout de commentaires dans les masques compliqués. Notez bien, cependant, que cela ne s'applique qu'aux caractères de données. Les caractères d'espacement ne doivent jamais apparaître dans les séquences spéciales d'un masque, par exemple dans la séquence (?( qui introduit une parenthèse conditionnelle.
