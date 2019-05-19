@@ -13,9 +13,7 @@ body {
 	border-radius: 10px;
 	padding-top: 10px;
 	padding-left: 40px;
-	margin-left: 10px;
 	margin-top: 20px;
-	margin-right: 10px;
 	box-shadow: 8px 8px 7px black;
 }
 
@@ -53,7 +51,8 @@ body {
 }
 
 .right {
-	padding-bottom: 170px;
+	padding:30px;
+	padding-bottom: 190px;
 }
 
 .left {
@@ -76,14 +75,14 @@ body {
 	border-radius: 10px;
 	width: 650px;
 	height: 200px;
-	top: 650px;
+	top: 700px;
 	left: -3%;
 }
 
 .milieu {
 	background-color: #505050;
-	margin-left: 15%;
-	margin-right: 15%;
+	margin-left: 11%;
+	margin-right: 11%;
 	height: 100%;
 }
 
