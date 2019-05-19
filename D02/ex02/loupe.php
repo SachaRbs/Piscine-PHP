@@ -14,9 +14,6 @@ function upper($matches)
 {
 	return ($matches[1]."".strtoupper($matches[2])."".$matches[3]);
 }
-
-// $pages = file($argv[1]);
-// print_r($page);
 $src = fopen($argv[1], 'r');
 $page = "";
 while ($src && !feof($src))
