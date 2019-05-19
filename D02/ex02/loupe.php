@@ -3,24 +3,23 @@
 if ($argc < 2 || !file_exists($argv[1]))
 	exit();
 
-function fct_1($matches)
+function call_back($matches)
 {
-	// print_r($matches);
-	// return ($matches[0]);
-	$matches[0] = preg
-}
-
-function fct_2($matches)
-{
-	print_r($matches);
+	$matches[0] = preg_replace_callback("/( title=\")(.*?)(\")mi/", "upper", $matches[0]);
+	$matches[0] = preg_replace_callback("/(>)(.*?)(<)/si", "upper", $matches[0]);
 	return ($matches[0]);
 }
 
+function upper($matches)
+{
+	return ($matches[1]."".strtoupper($matches[2])."".$matches[3]);
+}
+
+// $pages = file($argv[1]);
+// print_r($page);
 $src = fopen($argv[1], 'r');
 $page = "";
 while ($src && !feof($src))
 	$page .= fgets($src);
-
-echo $page."\n\n";
-$page = preg_replace_callback("/(<a )(.*?)(>)(.*)(<\/a)/si", "fct_1", $page);
+$page = preg_replace_callback("/(<a )(.*?)(>)(.*)(<\/a)/si", "call_back", $page);
 echo $page;
