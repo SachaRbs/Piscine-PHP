@@ -74,8 +74,8 @@ body {
 	padding: 10px;
 	position: relative;
 	border-radius: 10px;
-	width: 580px;
-	height: 180px;
+	width: 650px;
+	height: 200px;
 	top: 650px;
 	left: -3%;
 }
@@ -99,10 +99,6 @@ body {
 	vertical-align: text-top;
 }
 
-.input {
-	width : 450px;
-	height : 20px;
-}
 
 form {
 	position: absolute;
@@ -148,3 +144,26 @@ form {
 	top: 48%;
 	/* opacity:0; */
 }
+
+form {
+	margin-top: 1%;
+}
+
+input[type="text"] {
+	width : 500px;
+	height : 20px;
+}
+
+.button {
+	/* font-family: 'Courier New', Courier, monospace; */
+	bottom: 2px;
+	font-size: 18px;
+	background-color: #eeeeee;
+}
+
+/* .button {
+	border-radius: 2px;
+	height: 10%;
+	font-size: 17px;
+	background-color: #eeeeee
+} */
