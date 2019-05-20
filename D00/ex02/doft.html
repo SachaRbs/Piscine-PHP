@@ -1,51 +1,44 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8">
 		<title>Day of the 42</title>
 		<link rel="stylesheet" type="text/css" href="doft.css">
 	</head>
 	<body>
-		<div class = "milieu">
-			<div class = "box_top">
-				<img SRC = "resources/day_of_the_42.png" height="150">
-				<div class = "elem">			
-					<a href="https://disney.fr/"><img SRC = "resources/reload.png" width= "27"></a><br><br><br><br>
-					<a href ="https://www.relaischateaux.com/fr/"><img SRC = "resources/close.gif"></a>
-				</div>
-				<div class = "loupe">
-					<img = SRC = "resources/loupe.png" width = "300"> 
-				</div>
+		<div class = "all">
+			<div class = "box box_top">
+				<img SRC = "resources/day_of_the_42.png" title = "day_of_42" width="35%" class="dof">		
+				<img SRC = "resources/loupe.png" title = "loupe"  width="16%" class="loupe">
+				<a href ="https://disney.fr/"><img title = "reload" SRC = "resources/reload.png" width="1.5%" class="reload"></a>
+				<a href ="https://www.relaischateaux.com"><img class = "close" title = "close" SRC = "resources/close.gif"></a>
 			</div>
-			<div class = "box">
-				<div class = "side left">
-					<img SRC = "resources/arrow.png" alt="Avancer" title="Avancer" width = "100"><br>
-					<img SRC = "resources/main.png" alt="Prendre" title ="Prendre" width = "100"><br>
-					<img class = "border" SRC = "resources/oeil.png" alt="Regarder" title="Regarder"width = "100"><br>
-					<img SRC = "resources/outil.png" alt="Utiliser" title="Utiliser" width = "100"><br>
-					<img SRC = "resources/chat-icon.png" alt="Parler" title ="Parler" width = "100"><br>
-				</div>
-				<div class = "center">
-					<img SRC = "resources/cluster.jpg" width = "1470">
-					<a href="https://www.apple.com/">
-						<div class = "apple"></div>
-					</a>
-					<a href ="https://www.ikea.com/">
-						<div class = "ikea"></div>
-					</a>
-				</div>
-				<div class = "side right">
-					<img SRC = "resources/book.png" width = "120"><br>
-					<img SRC = "resources/towel.png" width = "120"><br>
-					<div class="bg"></div>
-				</div>
+			<div class = "box left">
+				<img SRC = "resources/arrow.png" alt="Avancer" title="Avancer" width="50%" class="icon"><br>
+				<img SRC = "resources/main.png" alt="Prendre" title ="Prendre" width="50%" class="icon"><br>
+				<img SRC = "resources/oeil.png" alt="Regarder" title="Regarder" width="50%" class="icon"><br>
+				<img SRC = "resources/outil.png" alt="Utiliser" title="Utiliser" width="50%" class="icon"><br>
+				<img SRC = "resources/chat-icon.png" alt="Parler" title ="Parler" width="50%" class="icon"><br>
 			</div>
-			<div class = "search">
+			<div class = "box center">
+				<img title = "cluster" class = "image" SRC = "resources/cluster.jpg" usemap="#links">
+				<map name="links">
+						<area class="apple" shape="rect" href="https://www.apple.com/">
+						<area class="ikea" shape="rect"  href="https://www.ikea.com/">
+				</map>
+			</div>
+			<div class = "right box">
+				<img SRC = "resources/book.png" title = "book"  width="60%" class="icon"><br>
+				<img SRC = "resources/towel.png" title = "towel" width="60%" class="icon"><br>
+				<div title = "brique" class= "brik"></div>
+			</div>
+			<div class = "search box">
 				<p class = "text">Vous <a style="font-size: 40px;font-family: serif"> entrez </a>maintenant dans une grande piece remplie d'<a style="text-shadow:  4px 4px 10px red;">ordinateurs</a>...<br>
 				<i>- Bonjour, vous etes nouveau ici ?</i>
 				</p>
 				<form>
-					<input type="text">
-					<input class = "button" type="submit" value="Repondre">
+					<input title = "texte" type="text">
+					<input title = "button" class = "button" type="submit" value="Repondre">
 				</form>
 			</div>
 		</div>

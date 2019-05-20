@@ -3,11 +3,17 @@ body {
 }
 
 table {
-	width:100%;
+	width:98%;
+	line-height: 1.2vh;
 }
 
 tr {
-	height: 5vw;
+	height:2vh;
+}
+
+td {
+	width:2%;
+	border: 1px solid black;
 }
 
 h1 {
@@ -16,34 +22,7 @@ h1 {
 }
 
 p {
-	font-family: 'Courier New', Courier, monospace;
-	font-size:0.4vw
-}
-
-.titre {
-	text-align: center;
-}
-
-.responsive {
-	max-width: 5%;
-	height: auto;
-  }
-
-td {
-	border: 1px solid black;
-	width:5.55555%;
-}
- .empty {
-	border: 0px;	
- }
-.num {
-	text-align: left;
-}
-.mass {
-	text-align:right;
-}
-p {
-	font-size: 0.9vw;
+	font-size: 1.8vmin;
 	text-align: center;
 }
 h1 {
@@ -78,4 +57,24 @@ td.lanthanede {
 }
 td.actimide {
 	background-color: #ff99ff;
+}
+
+.titre {
+	text-align: center;
+}
+
+.responsive {
+	max-width: 5%;
+  }
+
+ .empty {
+	border: 0px;	
+ }
+.num {
+	text-align: left;
+	font-size: 1.2vmin;
+}
+.mass {
+	text-align:right;
+	font-size: 1.2vmin;
 }
