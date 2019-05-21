@@ -10,5 +10,4 @@ else {
     header("WWW-Authenticate: Basic realm=\"membres\"");
     echo "<html><body>Cette zone est accessible uniquement aux membres du site</body></html>\n";
 }
-
 ?>
