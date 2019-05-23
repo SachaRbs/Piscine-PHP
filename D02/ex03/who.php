@@ -1,21 +1,19 @@
 #!/usr/bin/php
 <?php
-
-$last = shell_exec("last");
-$tab = explode("\n", $last);
-$logged = array();
-foreach ($tab as $elem)
-    if ((preg_match("/still logged in$/", $elem)) == 1)
-        array_push($logged, $elem);
-sort($logged);
-foreach ($logged as $elem)
-{
-    $line = explode(" ", preg_replace('/\s{2,}/', ' ', $elem));
-    echo str_pad($line[0], 9, " ");
-    echo str_pad($line[1], 9, " ");
-    echo str_pad($line[3], 4, " ");
-    echo $line[4]." ";
-    echo $line[5];
-    echo "\n";
-}
+	date_default_timezone_set('Europe/Paris');
+    $file = fopen("/var/run/utmpx", "r");
+    while ($utmpx = fread($file, 628)){
+        $unpack = unpack("a256a/a4b/a32c/id/ie/I2f/a256g/i16h", $utmpx);
+        $array[$unpack['c']] = $unpack;
+    }
+    ksort($array);
+    foreach ($array as $v){
+        if ($v['e'] == 7) {
+            echo str_pad(substr(trim($v['a']), 0, 8), 8, " ")." ";
+            echo str_pad(substr(trim($v['c']), 0, 8), 8, " ")." ";
+            echo date("M", $v["f1"]);
+            echo str_pad(date("j", $v["f1"]), 3, " ", STR_PAD_LEFT)." ".date("H:i", $v["f1"]);
+            echo "\n";
+        }
+    }
 ?>
